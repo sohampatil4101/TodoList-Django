@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Home page
+{% endblock title %} 
+
+
+
+{% block activehome %}
+active
+{% endblock activehome %} 
+
+{% block body %}
+
+<div class="mx-auto" style="width:100%;" >
+
+<div class="mx-auto" style="width:70%">
+    <h3>Organize your
+        <br>
+        work and life, finally.</h3>
+        Become focused, organized, and calm with Todoist.
+        The worlds #1 task manager and to-do list app.
+        <br>
+        <br>
+        <br>
+        <a href="/register" class="btn btn-success"  role="button">Start now</a>
+        <div class="container ">
+            <div class="col-lg-1">
+        <img src="{% static 'D:\Todo_list_Django\todo\static\pexels-cottonbro-studio-3832031.jpg' %}"  width="900" height="600" class="img-responsive my-5"  />
+            </div>
+    <div>
+<p class="mt-5 mb-3 text-muted text-center  text-dark fixed-bottom my-03 py-13">Copyright &copy; 2023| All Rights Reserved</p> 
+
+</div>
+{% endblock body %}
