@@ -83,7 +83,6 @@ def todo(request):
             return render(request, 'todo.html', context)
         else:
             ins = Task(name =  request.session.get('username'), task = task, description = description, date=datetime.today())
-            print(len(task))
             ins.save()
     return render(request, 'todo.html')
     logout(request)
