@@ -32,8 +32,6 @@ ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
 # Application definition
 
 INSTALLED_APPS = [
-    'admin_interface',
-    'colorfield',
     'todoapp',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -134,6 +132,6 @@ STATICFILES_DIRS = [
 
 
 STATICFILES_DIRS = os.path.join(BASE_DIR,'static'),
-STATIC_ROOT = os.path.join(BASE_DIR, 'static', 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
     
     
