@@ -85,13 +85,6 @@ def todo(request):
             ins = Task(name =  request.session.get('username'), task = task, description = description, date=datetime.today())
             ins.save()
     return render(request, 'todo.html')
-    logout(request)
-    try:
-        del request.session['username']
-    except KeyError:
-        pass
-    return redirect('/')
-
 
 
 

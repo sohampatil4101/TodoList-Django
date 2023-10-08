@@ -25,10 +25,10 @@
     <form action="/todo" method="Post">
         {% csrf_token %}
         
-      <h2 class="text-center ">Add your todo's here:</h2>
+      <h2 class="text-center ">Book Your Appoinment Here...</h2>
         <div class="form-group">
             <label for="task" >Task</label>
-            <input type="text"  class="form-control" id="task" name="task" placeholder="Enter your task ">
+            <input type="date"  class="form-control" id="task" name="task" placeholder="Enter your task ">
           </div>
 
           
@@ -50,7 +50,7 @@
   <form action="/todolist" >
       {% csrf_token %}
       
-    <h2> Your todo's list here:  <button class="btn btn-primary" >List</button></h2>
+    <h2> Your Appoinment's list here:  <button class="btn btn-primary" >List</button></h2>
   
 </form>
 </div>
